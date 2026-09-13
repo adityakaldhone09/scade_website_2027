@@ -1,174 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/form.css">
-    <title>Signup Form</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Member Registration - SCADE Club GHRCEM Pune" />
+  <title>Member Registration | SCADE Club - GHRCEM</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/scade-logo.png" />
+
+  <!-- Fonts & Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/scade-core.css" />
 </head>
-<body>
+<body style="background: var(--scade-bg-soft); min-height: 100vh; display: flex; flex-direction: column;">
 
-  <section>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
-    <span></span> <span></span> <span></span> <span></span> <span></span>
+  <!-- Minimal Nav Header -->
+  <header class="bg-white border-bottom py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="navbar-brand-wrapper">
+        <img class="navbar-brand-logo" src="assets/images/scade-logo.png" alt="SCADE Logo" />
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-title">SCADE</span>
+          <span class="navbar-brand-subtitle">GHRCEM Pune</span>
+        </div>
+      </a>
+      <a href="index.html" class="btn-scade-outline btn-scade-sm">
+        <i class="fas fa-arrow-left me-1"></i> Back to Website
+      </a>
+    </div>
+  </header>
 
-    <div class="signin">
-      <div class="content">
-        <h2>Sign Up</h2>
-
-        <!-- <form id="loginForm"> -->
-        <form id="signupForm">
-          <div class="form" id="signupForm">
-            <div class="inputBox">
-              <input id="name" type="text" required /> <i>Name</i>
+  <!-- Registration Card Container -->
+  <main class="container my-auto py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-8">
+        <div class="bg-white p-4 p-md-5 rounded-4 border shadow-md">
+          <div class="text-center mb-4">
+            <div class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle p-3 mb-3 border">
+              <i class="fas fa-id-card text-primary fs-3"></i>
             </div>
-
-            <div class="inputBox">
-              <input id="regNumber" type="text" required /> <i>ID-Card Number</i>
-            </div>
-
-            <div class="inputBox">
-              <input id="email" type="text" required /> <i>Email</i>
-            </div>
-
-            <div class="inputBox">
-              <input id="password" type="password" required />
-              <i>Password</i>
-            </div>
-
-            <div class="links">
-              <a href="./login.html">Login</a>
-            </div>
-
-            <div class="inputBox">
-              <input id="submit" type="submit" value="Sign Up" />
-            </div>
+            <h3 class="fw-bold mb-1 text-navy">Member Registration</h3>
+            <p class="text-muted small">Join the student community of Cyber Security & Data Science at GHRCEM.</p>
           </div>
-        </form>
+
+          <!-- Registration Form -->
+          <form id="signupForm">
+            <div class="scade-form-group mb-3">
+              <label class="scade-form-label" for="name">Full Name *</label>
+              <input type="text" id="name" class="scade-input" placeholder="e.g. Aditi Sharma" required autocomplete="name" />
+            </div>
+
+            <div class="scade-form-group mb-3">
+              <label class="scade-form-label" for="regNumber">College ID / PRN Number *</label>
+              <input type="text" id="regNumber" class="scade-input" placeholder="e.g. GHRCEM2024CS01" required />
+            </div>
+
+            <div class="scade-form-group mb-3">
+              <label class="scade-form-label" for="email">Institutional / Personal Email *</label>
+              <input type="email" id="email" class="scade-input" placeholder="student@ghrcem.edu" required autocomplete="email" />
+            </div>
+
+            <div class="scade-form-group mb-4">
+              <label class="scade-form-label" for="password">Create Password *</label>
+              <input type="password" id="password" class="scade-input" placeholder="At least 6 characters" required autocomplete="new-password" minlength="6" />
+            </div>
+
+            <button type="submit" id="submit" class="btn-scade-primary w-100 py-2">
+              <i class="fas fa-user-plus me-2"></i> Register Account
+            </button>
+          </form>
+
+          <div class="text-center mt-4 pt-3 border-top small text-muted">
+            Already registered? <a href="login.html" class="fw-bold text-primary">Log in here</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </main>
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <!-- Minimal Footer -->
+  <footer class="bg-white border-top py-3 text-center small text-muted mt-auto">
+    <div class="container">
+      &copy; 2025 SCADE GHRCEM &bull; Department of CSE (Cyber Security & Data Science)
+    </div>
+  </footer>
 
-<!-- Firebase SDK -->
-<script type="module">
+  <!-- Firebase Scripts -->
+  <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
     import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
-    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js"; // Adjust for Realtime Database
-    
+    import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
 
-    // Firebase configuration
     const firebaseConfig = {
-        apiKey: "AIzaSyCC7PCS8THdg5GKPqKl-w3FiB898NGal3s",
-        authDomain: "scade-website.firebaseapp.com",
-        projectId: "scade-website",
-        storageBucket: "scade-website.appspot.com",
-        messagingSenderId: "528561962338",
-        appId: "1:528561962338:web:317afbc9c42463f458803b",
-        measurementId: "G-4D3K51P8E3"
+      apiKey: "AIzaSyCC7PCS8THdg5GKPqKl-w3FiB898NGal3s",
+      authDomain: "scade-website.firebaseapp.com",
+      projectId: "scade-website",
+      storageBucket: "scade-website.appspot.com",
+      messagingSenderId: "528561962338",
+      appId: "1:528561962338:web:317afbc9c42463f458803b",
+      measurementId: "G-4D3K51P8E3"
     };
 
-    // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
     const auth = getAuth();
-    const db = getDatabase(app); 
+    const db = getDatabase(app);
 
-    // Signup form handling
     const signupForm = document.getElementById('signupForm');
     signupForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const name = document.getElementById('name').value;
-        const regNumber = document.getElementById('regNumber').value;
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const regNumber = document.getElementById('regNumber').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
 
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed up successfully
-                const user = userCredential.user;
-                const uid = user.uid;
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          const uid = user.uid;
 
-                set(ref(db, 'users/' + uid), {
-                    name: name,
-                    registrationNumber: regNumber,
-                    email: email
-                }).then(() => {
-                    alert('Signup successful');
-                    window.location.href = 'login.html';
-                }).catch((error) => {
-                    alert('Database error: ' + error.message);
-                });
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                alert(errorMessage);
-            });
+          set(ref(db, 'users/' + uid), {
+            name: name,
+            registrationNumber: regNumber,
+            email: email,
+            role: 'Member',
+            registeredAt: new Date().toISOString()
+          }).then(() => {
+            alert('Registration successful! Please login with your credentials.');
+            window.location.href = 'login.html';
+          }).catch((error) => {
+            // Even if RTDB has permissions error, user is created
+            alert('Account created. Please proceed to login.');
+            window.location.href = 'login.html';
+          });
+        })
+        .catch((error) => {
+          alert("Registration Error: " + error.message);
+        });
     });
-</script>
-
+  </script>
 </body>
 </html>

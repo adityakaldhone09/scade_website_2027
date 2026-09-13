@@ -1,211 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/form.css" />
-    <title>Login Form</title>
-  </head>
-  <body>
-    <section>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
-      <span></span> <span></span> <span></span> <span></span> <span></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Member & Coordinator Login Portal - SCADE Club GHRCEM Pune" />
+  <title>Member Login | SCADE Club - GHRCEM</title>
 
-      <div class="signin">
-        <div class="content">
-          <h2>Login</h2>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/scade-logo.png" />
 
-          <!-- <form id="loginForm"> -->
+  <!-- Fonts & Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/scade-core.css" />
+</head>
+<body style="background: var(--scade-bg-soft); min-height: 100vh; display: flex; flex-direction: column;">
+
+  <!-- Minimal Nav Header -->
+  <header class="bg-white border-bottom py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="navbar-brand-wrapper">
+        <img class="navbar-brand-logo" src="assets/images/scade-logo.png" alt="SCADE Logo" />
+        <div class="navbar-brand-text">
+          <span class="navbar-brand-title">SCADE</span>
+          <span class="navbar-brand-subtitle">GHRCEM Pune</span>
+        </div>
+      </a>
+      <a href="index.html" class="btn-scade-outline btn-scade-sm">
+        <i class="fas fa-arrow-left me-1"></i> Back to Website
+      </a>
+    </div>
+  </header>
+
+  <!-- Login Card Container -->
+  <main class="container my-auto py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-7">
+        <div class="bg-white p-4 p-md-5 rounded-4 border shadow-md">
+          <div class="text-center mb-4">
+            <div class="d-inline-flex align-items-center justify-content-center bg-light rounded-circle p-3 mb-3 border">
+              <i class="fas fa-user-shield text-primary fs-3"></i>
+            </div>
+            <h3 class="fw-bold mb-1 text-navy">Member Portal</h3>
+            <p class="text-muted small">Sign in to access club resources, event coordination, and admin tools.</p>
+          </div>
+
+          <!-- Login Form -->
           <form id="loginForm">
-            <div class="form" id="loginForm">
-              <div class="inputBox">
-                <input id="login-email" type="text" required /> <i>Email</i>
+            <div class="scade-form-group mb-3">
+              <label class="scade-form-label" for="login-email">Email Address</label>
+              <div class="position-relative">
+                <input type="email" id="login-email" class="scade-input" placeholder="name@domain.com" required autocomplete="email" />
               </div>
+            </div>
 
-              <div class="inputBox">
-                <input id="login-password" type="password" required />
-                <i>Password</i>
+            <div class="scade-form-group mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <label class="scade-form-label mb-0" for="login-password">Password</label>
+                <a href="#" id="forgot-password-link" class="small text-primary">Forgot?</a>
               </div>
+              <input type="password" id="login-password" class="scade-input" placeholder="••••••••" required autocomplete="current-password" />
+            </div>
 
-              <div class="links">
-                <a href="#" id="forgot-password-link">Forgot Password</a>
-                <a href="./signup.html">Signup</a>
-              </div>
+            <button type="submit" id="submit" class="btn-scade-primary w-100 py-2 mt-2">
+              <i class="fas fa-sign-in-alt me-2"></i> Log In
+            </button>
+          </form>
 
-              <div class="inputBox">
-                <input id="submit" type="submit" value="Login" />
-              </div>
+          <!-- Password Reset Form (Initially Hidden) -->
+          <form id="forgotPasswordForm" class="d-none mt-3 pt-3 border-top">
+            <h6 class="fw-bold mb-2">Reset Password</h6>
+            <p class="small text-muted mb-3">Enter your registered email to receive a password recovery link.</p>
+            <div class="scade-form-group mb-3">
+              <input type="email" id="forgot-email" class="scade-input" placeholder="Your registered email" required />
+            </div>
+            <div class="d-flex gap-2">
+              <button type="submit" id="forgot-submit" class="btn-scade-secondary btn-scade-sm w-100">Send Reset Email</button>
+              <button type="button" id="cancel-reset-btn" class="btn btn-outline-secondary btn-sm w-100">Cancel</button>
             </div>
           </form>
-          <form class="mx-1 mx-md-4 mt-4 d-none" id="forgotPasswordForm">
-            <p class="text-center h4 fw-bold mb-4 mx-1 mx-md-4 mt-4">
-              Reset Password
-            </p>
-            <div class="d-flex flex-row align-items-center mb-4">
-              <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-              <div class="form-outline flex-fill mb-0">
-                <input
-                  type="email"
-                  id="forgot-email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-              <button
-                type="submit"
-                id="forgot-submit"
-                class="btn btn-primary btn-lg"
-              >
-                Reset Password
-              </button>
-            </div>
-          </form>
+
+          <div class="text-center mt-4 pt-3 border-top small text-muted">
+            Do not have an account? <a href="signup.html" class="fw-bold text-primary">Sign up here</a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </main>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <!-- Minimal Footer -->
+  <footer class="bg-white border-top py-3 text-center small text-muted mt-auto">
+    <div class="container">
+      &copy; 2025 SCADE GHRCEM &bull; Department of CSE (Cyber Security & Data Science)
+    </div>
+  </footer>
 
-    <!-- Firebase SDK -->
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-      import {
-        getAuth,
-        signInWithEmailAndPassword,
-        sendPasswordResetEmail,
-      } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+  <!-- Firebase Scripts -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
+    import {
+      getAuth,
+      signInWithEmailAndPassword,
+      sendPasswordResetEmail,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
 
-      // Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyCC7PCS8THdg5GKPqKl-w3FiB898NGal3s",
-        authDomain: "scade-website.firebaseapp.com",
-        projectId: "scade-website",
-        storageBucket: "scade-website.appspot.com",
-        messagingSenderId: "528561962338",
-        appId: "1:528561962338:web:317afbc9c42463f458803b",
-        measurementId: "G-4D3K51P8E3",
-      };
+    const firebaseConfig = {
+      apiKey: "AIzaSyCC7PCS8THdg5GKPqKl-w3FiB898NGal3s",
+      authDomain: "scade-website.firebaseapp.com",
+      projectId: "scade-website",
+      storageBucket: "scade-website.appspot.com",
+      messagingSenderId: "528561962338",
+      appId: "1:528561962338:web:317afbc9c42463f458803b",
+      measurementId: "G-4D3K51P8E3",
+    };
 
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-      const auth = getAuth();
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth();
 
-      // Login form handling
-      const loginForm = document.getElementById("loginForm");
-      loginForm.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const email = document.getElementById("login-email").value;
-        const password = document.getElementById("login-password").value;
+    const loginForm = document.getElementById("loginForm");
+    const forgotPasswordLink = document.getElementById("forgot-password-link");
+    const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+    const cancelResetBtn = document.getElementById("cancel-reset-btn");
 
-        signInWithEmailAndPassword(auth, email, password)
-          .then((userCredential) => {
-            // Logged in successfully
-            const user = userCredential.user;
-            alert("Login successful");
-            sessionStorage.setItem("user", JSON.stringify(user));
-            window.location.href = "index.html"; // Redirect to index.html after login
-          })
-          .catch((error) => {
-            const errorMessage = error.message;
-            alert(errorMessage);
-          });
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("login-email").value;
+      const password = document.getElementById("login-password").value;
+
+      signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          sessionStorage.setItem("user", JSON.stringify(user));
+          alert("Login successful. Welcome, " + (user.email || "Member") + "!");
+          window.location.href = "admin/admin.html";
+        })
+        .catch((error) => {
+          alert("Authentication Error: " + error.message);
+        });
+    });
+
+    forgotPasswordLink.addEventListener("click", (e) => {
+      e.preventDefault();
+      forgotPasswordForm.classList.remove("d-none");
+    });
+
+    if (cancelResetBtn) {
+      cancelResetBtn.addEventListener("click", () => {
+        forgotPasswordForm.classList.add("d-none");
       });
+    }
 
-      // Forgot password handling
-      const forgotPasswordLink = document.getElementById(
-        "forgot-password-link"
-      );
-      const forgotPasswordForm = document.getElementById("forgotPasswordForm");
+    forgotPasswordForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("forgot-email").value;
 
-      forgotPasswordLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        forgotPasswordForm.classList.remove("d-none");
-        loginForm.classList.add("d-none");
-      });
-
-      const forgotPasswordFormSubmit =
-        document.getElementById("forgotPasswordForm");
-      forgotPasswordFormSubmit.addEventListener("submit", (e) => {
-        e.preventDefault();
-        const email = document.getElementById("forgot-email").value;
-
-        sendPasswordResetEmail(auth, email)
-          .then(() => {
-            alert("Password reset email sent");
-            forgotPasswordForm.classList.add("d-none");
-            loginForm.classList.remove("d-none");
-          })
-          .catch((error) => {
-            const errorMessage = error.message;
-            alert(errorMessage);
-          });
-      });
-
-      // Check if user is already logged in
-      onAuthStateChanged(auth, (user) => {
-        if (user) {
-          window.location.href = "index.html"; // Redirect if user is already logged in
-        }
-      });
-    </script>
-  </body>
+      sendPasswordResetEmail(auth, email)
+        .then(() => {
+          alert("Password reset email sent to " + email);
+          forgotPasswordForm.classList.add("d-none");
+        })
+        .catch((error) => {
+          alert("Error: " + error.message);
+        });
+    });
+  </script>
+</body>
 </html>

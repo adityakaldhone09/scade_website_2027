@@ -19,14 +19,15 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/fireba
   // Check for authenticated user
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log("User is logged in:");
-      // Optionally, store user data in sessionStorage
-      console.log(user);
+      console.log("User session active:", user.email);
       sessionStorage.setItem("user", JSON.stringify(user));
     } else {
-      console.log("No user is logged in. Redirecting to login page.");
-      sessionStorage.removeItem("user"); // Ensure session is cleared
-      window.location.href = 'login.html';
+      console.log("No active user session.");
+      sessionStorage.removeItem("user");
+      // Only redirect if explicitly on a restricted admin page
+      if (window.location.pathname.includes('/admin/')) {
+        window.location.href = '../login.html';
+      }
     }
   });
 
