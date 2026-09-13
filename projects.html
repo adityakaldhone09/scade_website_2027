@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Student Technical Innovations and Research Projects by SCADE Club members at GHRCEM Pune." />
+  <meta name="author" content="SCADE Club GHRCEM" />
+  
+  <title>Student Projects | SCADE Club - GHRCEM Pune</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/scade-logo.png" />
+
+  <!-- Fonts & Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/scade-core.css" />
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="scade-top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="d-none d-md-inline">Department of CSE (Cyber Security & Data Science) &bull;</span>
+        <span>GHRCEM, Pune</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://linktr.ee/scadeghrcem" target="_blank" rel="noopener"><i class="fas fa-link me-1"></i> Linktree</a>
+        <a href="login.html"><i class="fas fa-lock me-1"></i> Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="scade-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between py-2">
+        <a href="index.html" class="navbar-brand-wrapper" aria-label="SCADE Home">
+          <img class="navbar-brand-logo" src="assets/images/scade-logo.png" alt="SCADE Club Logo" />
+          <div class="navbar-brand-text">
+            <span class="navbar-brand-title">SCADE</span>
+            <span class="navbar-brand-subtitle">GHRCEM Pune</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="scade-nav-links">
+          <li><a href="index.html" class="scade-nav-link">Home</a></li>
+          <li><a href="about.html" class="scade-nav-link">About</a></li>
+          <li><a href="events.html" class="scade-nav-link">Events</a></li>
+          <li><a href="projects.html" class="scade-nav-link active">Projects</a></li>
+          <li><a href="team.html" class="scade-nav-link">Team</a></li>
+          <li><a href="gallery.html" class="scade-nav-link">Gallery</a></li>
+          <li><a href="achievements.html" class="scade-nav-link">Achievements</a></li>
+          <li><a href="contact.html" class="scade-nav-link">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="btn-scade-primary btn-scade-sm d-none d-lg-inline-flex">
+            Join SCADE
+          </a>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/scade-logo.png" alt="SCADE" style="height: 36px;">
+        <span class="fw-bold fs-5 text-navy">SCADE</span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About SCADE</a></li>
+      <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events & Workshops</a></li>
+      <li><a href="projects.html" class="active"><i class="fas fa-code-branch"></i> Student Projects</a></li>
+      <li><a href="team.html"><i class="fas fa-users"></i> Leadership & Team</a></li>
+      <li><a href="gallery.html"><i class="fas fa-photo-video"></i> Media Gallery</a></li>
+      <li><a href="achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      <li class="mt-3 pt-3 border-top"><a href="login.html"><i class="fas fa-user-shield"></i> Member Portal</a></li>
+    </ul>
+  </aside>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><span>Projects</span></li>
+      </ul>
+      <h1 class="page-hero-title">Student Innovations & Projects</h1>
+      <p class="page-hero-desc">
+        Explore research-driven technical projects built by SCADE student engineers in Cyber Defense, Applied Machine Learning, and Automated Security Systems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter & Category Section -->
+  <section class="py-4 bg-light border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-center gap-2" data-filter-group="projects" data-filter-target=".project-col-item" data-empty-id="no-projects-found">
+        <button class="filter-btn active" data-filter="*">All Innovations</button>
+        <button class="filter-btn" data-filter=".proj-cyber">Cyber Defense & Security</button>
+        <button class="filter-btn" data-filter=".proj-ai">Data Science & AI</button>
+        <button class="filter-btn" data-filter=".proj-tools">Security Tools & Auditing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="row g-4" id="projects-grid">
+
+        <!-- Project 1: NIDS -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-cyber">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-01.jpg" alt="Network Intrusion Detection System" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Scapy</span>
+                <span class="project-tech-tag">Snort</span>
+                <span class="project-tech-tag">Streamlit</span>
+              </div>
+              <h4>Real-Time Network Intrusion Detection</h4>
+              <p>
+                An automated packet inspection engine that analyzes inbound network frames against signature heuristics and heuristic rule sets to mitigate TCP SYN floods and port reconnaissance in campus labs.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-code-branch text-primary me-1"></i> Open Source</span>
+                <a href="https://github.com/Chinmay2845" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fab fa-github me-1"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Phishing Detector -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-cyber proj-ai">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-02.jpg" alt="Autonomous Phishing Classifier" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Scikit-Learn</span>
+                <span class="project-tech-tag">FastAPI</span>
+                <span class="project-tech-tag">NLP</span>
+              </div>
+              <h4>Phishing & Malicious URL Classifier</h4>
+              <p>
+                An AI-driven URL reputation analyzer utilizing lexical feature extraction and Random Forest classification to detect deceptive domain impersonation and credential-harvesting pages with 97.4% accuracy.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-brain text-info me-1"></i> ML Model</span>
+                <a href="https://github.com/HarsDiva10" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fab fa-github me-1"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: File Cryptography -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-cyber proj-tools">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-03.jpg" alt="Multi-Party Cryptography Suite" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">AES-256</span>
+                <span class="project-tech-tag">RSA-4096</span>
+                <span class="project-tech-tag">Cryptography</span>
+                <span class="project-tech-tag">Flask</span>
+              </div>
+              <h4>Secure Multi-Party Cryptography Hub</h4>
+              <p>
+                A hybrid cryptographic client facilitating peer-to-peer authenticated payload exchange using asymmetric RSA handshakes coupled with symmetrical high-throughput AES-GCM stream ciphers.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-lock text-success me-1"></i> End-to-End</span>
+                <a href="https://github.com/UtkarshNeel" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fab fa-github me-1"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Academic Analytics -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-ai">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-04.jpg" alt="Data Science Performance Dashboard" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Power BI</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Pandas</span>
+                <span class="project-tech-tag">SQL</span>
+              </div>
+              <h4>Student Academic Predictive Analytics</h4>
+              <p>
+                Interactive business intelligence and forecasting dashboard developed for departmental student tracking, identifying academic performance indicators and early intervention triggers.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-chart-line text-warning me-1"></i> BI Dashboard</span>
+                <a href="https://linktr.ee/scadeghrcem" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fas fa-chart-bar me-1"></i> Details
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Vulnerability Scanner -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-tools proj-cyber">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-05.jpg" alt="Vulnerability Scanner" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">Nmap</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">CVE-API</span>
+                <span class="project-tech-tag">Docker</span>
+              </div>
+              <h4>Automated Recon & CVE Auditing Suite</h4>
+              <p>
+                A modular security scanner that orchestrates non-invasive service enumeration, identifies stale TLS implementations, and queries the National Vulnerability Database for known zero-day CVE matches.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-shield-alt text-primary me-1"></i> Recon Tool</span>
+                <a href="https://github.com/neeraj-dase" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fab fa-github me-1"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Log Anomaly Detection -->
+        <div class="col-lg-4 col-md-6 project-col-item proj-ai proj-cyber">
+          <div class="project-card">
+            <div class="project-card-media">
+              <img src="assets/images/course-06.jpg" alt="Autoencoder Anomaly Detection" />
+            </div>
+            <div class="project-card-body">
+              <div class="project-tech-tags">
+                <span class="project-tech-tag">PyTorch</span>
+                <span class="project-tech-tag">Autoencoders</span>
+                <span class="project-tech-tag">ELK Stack</span>
+                <span class="project-tech-tag">Linux</span>
+              </div>
+              <h4>Server Log Telemetry Anomaly Detector</h4>
+              <p>
+                Deep learning framework using recurrent neural network autoencoders to ingest high-frequency Apache and Nginx access logs, automatically flagging outlier request volumes and SQL injection probes.
+              </p>
+              <div class="project-card-footer">
+                <span class="small text-muted"><i class="fas fa-microchip text-danger me-1"></i> Deep Learning</span>
+                <a href="https://github.com/tanmay-khalekar" target="_blank" rel="noopener" class="btn-scade-outline btn-scade-sm">
+                  <i class="fab fa-github me-1"></i> Repository
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Empty State -->
+      <div id="no-projects-found" class="text-center py-5" style="display: none;">
+        <div class="bg-light p-5 rounded-4 border max-w-500 mx-auto" style="max-width: 480px;">
+          <i class="fas fa-folder-open text-muted mb-3" style="font-size: 3rem;"></i>
+          <h4 class="fw-bold">No projects found in this category</h4>
+          <p class="text-muted small mb-3">Please choose another category or select "All Innovations".</p>
+          <button class="btn-scade-primary btn-scade-sm" onclick="document.querySelector('[data-filter=\'*\']').click()">Show All Projects</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaboration Callout -->
+  <section class="py-5 bg-light">
+    <div class="container py-2">
+      <div class="scade-cta-strip text-center">
+        <h2 class="text-white fw-bold mb-3">Have an Innovation Idea or Research Paper?</h2>
+        <p class="text-white-50 max-w-600 mx-auto mb-4" style="max-width: 600px;">
+          SCADE actively incubates student projects, assists with patent filing guidance, and supports research publication under departmental faculty mentorship.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="contact.html" class="btn-scade-secondary">Propose a Project</a>
+          <a href="about.html" class="btn-scade-outline-white">Learn About Research Support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutional Footer -->
+  <footer class="scade-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/images/scade-logo.png" alt="SCADE Club Logo" class="footer-brand-logo" />
+          <h5 class="text-white fw-bold mb-2">SCADE Club</h5>
+          <p class="small text-white-50 mb-3">
+            Society of Cyber Security Advancements & Data Science Excellence.<br>
+            Department of CSE (Cyber Security & Data Science),<br>
+            G H Raisoni College of Engineering and Management, Pune.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://linktr.ee/scadeghrcem" target="_blank" rel="noopener" aria-label="Linktree"><i class="fas fa-link"></i></a>
+            <a href="https://www.instagram.com/_tejashvi_09_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/HarsDiva10" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tejashvitiwari" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About SCADE</a></li>
+            <li><a href="events.html">Events & Workshops</a></li>
+            <li><a href="projects.html">Student Projects</a></li>
+            <li><a href="team.html">Leadership & Team</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Media & Hub</h6>
+          <ul class="footer-links-list">
+            <li><a href="gallery.html">Photo & Video Gallery</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="zeroDayBlog.html">ZeroDay Archive</a></li>
+            <li><a href="githubEvent.html">GitHub Bootcamp</a></li>
+            <li><a href="login.html">Member Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-heading">Institution & Contact</h6>
+          <p class="small text-white-50 mb-2">
+            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+            Navale Road, Wagholi, Pune, Maharashtra 412207
+          </p>
+          <p class="small text-white-50 mb-2">
+            <i class="fas fa-university text-primary me-2"></i>
+            Affiliated to Savitribai Phule Pune University (SPPU)
+          </p>
+          <p class="small text-white-50 mb-3">
+            <i class="fas fa-globe text-primary me-2"></i>
+            Linktree: <a href="https://linktr.ee/scadeghrcem" class="text-info" target="_blank">linktr.ee/scadeghrcem</a>
+          </p>
+          <a href="contact.html" class="btn-scade-outline-white btn-scade-sm">Contact Club Leadership</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2025 SCADE GHRCEM. All rights reserved.</span>
+        <span>Department of CSE (Cyber Security & Data Science)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/scade-core.js"></script>
+</body>
+</html>
