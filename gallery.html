@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Visual media archive and photo gallery of SCADE Club events, technical workshops, and celebrations at GHRCEM Pune." />
+  <meta name="author" content="SCADE Club GHRCEM" />
+  
+  <title>Media Gallery | SCADE Club - GHRCEM Pune</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/scade-logo.png" />
+
+  <!-- Fonts & Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/scade-core.css" />
+</head>
+
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="scade-top-bar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <span class="d-none d-md-inline">Department of CSE (Cyber Security & Data Science) &bull;</span>
+        <span>GHRCEM, Pune</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://linktr.ee/scadeghrcem" target="_blank" rel="noopener"><i class="fas fa-link me-1"></i> Linktree</a>
+        <a href="login.html"><i class="fas fa-lock me-1"></i> Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="scade-navbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between py-2">
+        <a href="index.html" class="navbar-brand-wrapper" aria-label="SCADE Home">
+          <img class="navbar-brand-logo" src="assets/images/scade-logo.png" alt="SCADE Club Logo" />
+          <div class="navbar-brand-text">
+            <span class="navbar-brand-title">SCADE</span>
+            <span class="navbar-brand-subtitle">GHRCEM Pune</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <ul class="scade-nav-links">
+          <li><a href="index.html" class="scade-nav-link">Home</a></li>
+          <li><a href="about.html" class="scade-nav-link">About</a></li>
+          <li><a href="events.html" class="scade-nav-link">Events</a></li>
+          <li><a href="projects.html" class="scade-nav-link">Projects</a></li>
+          <li><a href="team.html" class="scade-nav-link">Team</a></li>
+          <li><a href="gallery.html" class="scade-nav-link active">Gallery</a></li>
+          <li><a href="achievements.html" class="scade-nav-link">Achievements</a></li>
+          <li><a href="contact.html" class="scade-nav-link">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <a href="contact.html" class="btn-scade-primary btn-scade-sm d-none d-lg-inline-flex">
+            Join SCADE
+          </a>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/scade-logo.png" alt="SCADE" style="height: 36px;">
+        <span class="fw-bold fs-5 text-navy">SCADE</span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-info-circle"></i> About SCADE</a></li>
+      <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events & Workshops</a></li>
+      <li><a href="projects.html"><i class="fas fa-code-branch"></i> Student Projects</a></li>
+      <li><a href="team.html"><i class="fas fa-users"></i> Leadership & Team</a></li>
+      <li><a href="gallery.html" class="active"><i class="fas fa-photo-video"></i> Media Gallery</a></li>
+      <li><a href="achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+      <li class="mt-3 pt-3 border-top"><a href="login.html"><i class="fas fa-user-shield"></i> Member Portal</a></li>
+    </ul>
+  </aside>
+
+  <!-- Page Hero Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>/</li>
+        <li><span>Gallery</span></li>
+      </ul>
+      <h1 class="page-hero-title">Visual Media Archive</h1>
+      <p class="page-hero-desc">
+        A photographic record of workshops, technical bootcamps, student engagements, and departmental celebrations at GHRCEM, Pune. Click any image for full-screen inspection.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Buttons Section -->
+  <section class="py-4 bg-light border-bottom">
+    <div class="container">
+      <div class="gallery-filter-bar mb-0" data-filter-group="gallery" data-filter-target=".gallery-item" data-empty-id="no-photos-found">
+        <button class="filter-btn active" data-filter="*">All Moments</button>
+        <button class="filter-btn" data-filter=".gal-zeroday">ZeroDay Inauguration</button>
+        <button class="filter-btn" data-filter=".gal-github">GitHub Bootcamp</button>
+        <button class="filter-btn" data-filter=".gal-teachers">Teacher's Day</button>
+        <button class="filter-btn" data-filter=".gal-posters">Official Posters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Grid Section -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="gallery-grid" id="gallery-container">
+
+        <!-- ZeroDay Main Keynote -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/mainImage.jpg" data-caption="ZeroDay: Newbie Unveil — Keynote Stage & Faculty Inauguration">
+            <img src="assets/images/blogs/Zeroday/mainImage.jpg" alt="ZeroDay Inaugural Keynote" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>ZeroDay: Keynote Stage</h6>
+              <span>Inauguration Ceremony</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 1 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (1).jpg" data-caption="ZeroDay Event: Student Audience & Welcome Address">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (1).jpg" alt="ZeroDay Welcome Address" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Welcome Address</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 2 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (2).jpg" data-caption="ZeroDay Event: Faculty Address by Dr. Deepika Ajalkar">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (2).jpg" alt="Faculty Keynote Address" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Faculty Address</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 3 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (3).jpg" data-caption="ZeroDay Event: Token of Appreciation Presentation">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (3).jpg" alt="Felicitation Ceremony" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Felicitation Ceremony</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 4 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (4).jpg" data-caption="ZeroDay Event: Technical Quiz Competition">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (4).jpg" alt="Technical Quiz Session" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Technical Quiz Session</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 5 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (5).jpg" data-caption="ZeroDay Event: SCADE Leadership Speech">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (5).jpg" alt="Leadership Speech" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Leadership Address</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 6 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (6).jpg" data-caption="ZeroDay Event: Student Interaction & Discussions">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (6).jpg" alt="Student Interaction" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Student Discussions</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 7 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (7).jpg" data-caption="ZeroDay Event: Tech Presentation & Platform Demo">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (7).jpg" alt="Platform Demo" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Platform Walkthrough</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 8 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (8).jpg" data-caption="ZeroDay Event: Audience Participation">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (8).jpg" alt="Audience Participation" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Audience Engagement</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 9 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (9).jpg" data-caption="ZeroDay Event: Faculty Mentorship Interaction">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (9).jpg" alt="Faculty Interaction" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Faculty Interaction</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 10 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (10).jpg" data-caption="ZeroDay Event: Student Team Coordination">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (10).jpg" alt="Team Coordination" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Team Coordination</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 11 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (11).jpg" data-caption="ZeroDay Event: Keynote Slide Demonstration">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (11).jpg" alt="Slide Demonstration" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Technical Slides</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 12 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (12).jpg" data-caption="ZeroDay Event: Commemorative Group Photo">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (12).jpg" alt="Commemorative Group Photo" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Group Commemoration</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 13 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (13).jpg" data-caption="ZeroDay Event: Seminar Hall Session">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (13).jpg" alt="Seminar Session" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Seminar Hall Session</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZeroDay 14 -->
+        <div class="gallery-item gal-zeroday">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/Zeroday/zerdayImage (14).jpg" data-caption="ZeroDay Event: Closing Address & Vote of Thanks">
+            <img src="assets/images/blogs/Zeroday/zerdayImage (14).jpg" alt="Vote of Thanks" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Vote of Thanks</h6>
+              <span>ZeroDay Event</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 1 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (1).JPG" data-caption="GitHub Bootcamp: Guest Speaker Ms. Sanika Kotigre Keynote">
+            <img src="assets/images/blogs/GithubEvent/image (1).JPG" alt="GitHub Bootcamp Speaker" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Ms. Sanika Kotigre</h6>
+              <span>GitHub Bootcamp Session</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 2 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (2).JPG" data-caption="GitHub Bootcamp: Git Branching & Merging Deep Dive">
+            <img src="assets/images/blogs/GithubEvent/image (2).JPG" alt="Git Commands Demonstration" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Git Architecture Training</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 3 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (3).JPG" data-caption="GitHub Bootcamp: Live Terminal Demonstration">
+            <img src="assets/images/blogs/GithubEvent/image (3).JPG" alt="Live Terminal Demo" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Live Terminal Commands</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 4 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (4).JPG" data-caption="GitHub Bootcamp: Student Hands-on Practice">
+            <img src="assets/images/blogs/GithubEvent/image (4).JPG" alt="Student Practice" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Hands-on Practice</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 5 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (5).JPG" data-caption="GitHub Bootcamp: Q&A and Conflict Resolution">
+            <img src="assets/images/blogs/GithubEvent/image (5).JPG" alt="Q&A Session" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Interactive Q&A</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 6 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (6).JPG" data-caption="GitHub Bootcamp: Collaboration Workflows">
+            <img src="assets/images/blogs/GithubEvent/image (6).JPG" alt="Collaboration Workflows" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Collaborative Git</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 7 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (7).JPG" data-caption="GitHub Bootcamp: Speaker Felicitation with Memento">
+            <img src="assets/images/blogs/GithubEvent/image (7).JPG" alt="Speaker Felicitation" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Speaker Felicitation</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Bootcamp 8 -->
+        <div class="gallery-item gal-github">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/GithubEvent/image (8).JPG" data-caption="GitHub Bootcamp: Full Group & Committee Photo">
+            <img src="assets/images/blogs/GithubEvent/image (8).JPG" alt="Full Group Photo" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Batch Commemoration</h6>
+              <span>GitHub Bootcamp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 1 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (1).jpg" data-caption="Teacher's Day Celebration: Faculty Welcome & Games">
+            <img src="assets/images/blogs/TeachersDay/image (1).jpg" alt="Teacher's Day Welcome" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Faculty Welcome</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 2 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (2).jpg" data-caption="Teacher's Day Celebration: Interactive Faculty Team Activity">
+            <img src="assets/images/blogs/TeachersDay/image (2).jpg" alt="Faculty Games" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Faculty Activities</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 3 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (3).jpg" data-caption="Teacher's Day Celebration: Engaging Group Games">
+            <img src="assets/images/blogs/TeachersDay/image (3).jpg" alt="Group Games" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Team Building Games</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 4 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (4).jpg" data-caption="Teacher's Day Celebration: Student Tribute Speeches">
+            <img src="assets/images/blogs/TeachersDay/image (4).jpg" alt="Student Tributes" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Student Tributes</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 5 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (5).jpg" data-caption="Teacher's Day Celebration: Memento Distribution to Faculty">
+            <img src="assets/images/blogs/TeachersDay/image (5).jpg" alt="Memento Distribution" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Memento Distribution</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 6 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (6).jpg" data-caption="Teacher's Day Celebration: Departmental Camaraderie">
+            <img src="assets/images/blogs/TeachersDay/image (6).jpg" alt="Faculty Appreciation" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Department Camaraderie</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 7 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (7).jpg" data-caption="Teacher's Day Celebration: Joyful Celebrations">
+            <img src="assets/images/blogs/TeachersDay/image (7).jpg" alt="Joyful Moments" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Joyful Moments</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Teacher's Day 8 -->
+        <div class="gallery-item gal-teachers">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/blogs/TeachersDay/image (8).jpg" data-caption="Teacher's Day Celebration: Faculty & Student Group Portrait">
+            <img src="assets/images/blogs/TeachersDay/image (8).jpg" alt="Group Portrait" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Group Portrait</h6>
+              <span>Teacher's Day</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 1: ZeroDay -->
+        <div class="gallery-item gal-posters">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/events/firstEvent.jpg" data-caption="Official Event Poster: ZeroDay — Newbie Unveil (12 Aug 2024)">
+            <img src="assets/images/events/firstEvent.jpg" alt="ZeroDay Poster" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>ZeroDay Poster</h6>
+              <span>Official Release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 2: GitHub -->
+        <div class="gallery-item gal-posters">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/events/gitEvent.png" data-caption="Official Event Poster: GitHub Bootcamp — Beginner to Expert (25 Sep 2024)">
+            <img src="assets/images/events/gitEvent.png" alt="GitHub Bootcamp Poster" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>GitHub Bootcamp Poster</h6>
+              <span>Official Release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 3: Teacher's Day -->
+        <div class="gallery-item gal-posters">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/events/teachersDayEvent.jpg" data-caption="Official Event Poster: Teacher's Day Celebration (25 Sep 2024)">
+            <img src="assets/images/events/teachersDayEvent.jpg" alt="Teacher's Day Poster" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Teacher's Day Poster</h6>
+              <span>Official Release</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 4: Treasure Hunt -->
+        <div class="gallery-item gal-posters">
+          <div class="gallery-thumb-item" data-scade-lightbox="assets/images/events/tresureHuntEvent.jpg" data-caption="Official Event Poster: Campus Technical Treasure Hunt">
+            <img src="assets/images/events/tresureHuntEvent.jpg" alt="Treasure Hunt Poster" loading="lazy" />
+            <div class="gallery-thumb-caption">
+              <h6>Treasure Hunt Poster</h6>
+              <span>Official Release</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutional Footer -->
+  <footer class="scade-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <img src="assets/images/scade-logo.png" alt="SCADE Club Logo" class="footer-brand-logo" />
+          <h5 class="text-white fw-bold mb-2">SCADE Club</h5>
+          <p class="small text-white-50 mb-3">
+            Society of Cyber Security Advancements & Data Science Excellence.<br>
+            Department of CSE (Cyber Security & Data Science),<br>
+            G H Raisoni College of Engineering and Management, Pune.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://linktr.ee/scadeghrcem" target="_blank" rel="noopener" aria-label="Linktree"><i class="fas fa-link"></i></a>
+            <a href="https://www.instagram.com/_tejashvi_09_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/HarsDiva10" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tejashvitiwari" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About SCADE</a></li>
+            <li><a href="events.html">Events & Workshops</a></li>
+            <li><a href="projects.html">Student Projects</a></li>
+            <li><a href="team.html">Leadership & Team</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="footer-heading">Media & Hub</h6>
+          <ul class="footer-links-list">
+            <li><a href="gallery.html">Photo & Video Gallery</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="zeroDayBlog.html">ZeroDay Archive</a></li>
+            <li><a href="githubEvent.html">GitHub Bootcamp</a></li>
+            <li><a href="login.html">Member Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h6 class="footer-heading">Institution & Contact</h6>
+          <p class="small text-white-50 mb-2">
+            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+            Navale Road, Wagholi, Pune, Maharashtra 412207
+          </p>
+          <p class="small text-white-50 mb-2">
+            <i class="fas fa-university text-primary me-2"></i>
+            Affiliated to Savitribai Phule Pune University (SPPU)
+          </p>
+          <p class="small text-white-50 mb-3">
+            <i class="fas fa-globe text-primary me-2"></i>
+            Linktree: <a href="https://linktr.ee/scadeghrcem" class="text-info" target="_blank">linktr.ee/scadeghrcem</a>
+          </p>
+          <a href="contact.html" class="btn-scade-outline-white btn-scade-sm">Contact Club Leadership</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2025 SCADE GHRCEM. All rights reserved.</span>
+        <span>Department of CSE (Cyber Security & Data Science)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/scade-core.js"></script>
+</body>
+</html>
